@@ -1,0 +1,177 @@
+:root {
+    --blue-color: #191D88;
+    --yellow-color: #FFC436;
+    --sky-color: #64CCC5;
+    --white-color: #EEEEEE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.backgrond {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imgs/foodtruck.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(25, 29, 136, 0.7), rgba(255, 196, 54, 0.7));
+}
+
+.logo_icon {
+    color: var(--sky-color);
+}
+
+.login {
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, .1);
+    border: 5px solid;
+    border-color: var(--sky-color);
+    border-radius: 2rem;
+}
+
+input {
+    background-color: rgba(255, 196, 54, 0.8);
+}
+
+.sign_btn {
+    color: var(--sky-color);
+    border-color: var(--sky-color);
+    transition-duration: .5s;
+}
+
+.sign_btn:hover {
+    color: var(--white-color);
+    background-color: var(--sky-color);
+}
+
+.cust_btn {
+    color: var(--white-color);
+    background-color: rgba(25, 29, 136, 0.8);
+    transition-duration: .5s;
+}
+
+.cust_btn:hover {
+    color: var(--white-color);
+    background-color: #1450A3;
+}
+
+.grid_main {
+    height: 40rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas: "st se rd"
+    "st fo fo"
+    "fv sx sv";
+}
+
+.sec__overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.st {
+    border-radius: 1rem;
+    background: url(imgs/stikfood.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: st;
+}
+
+.se {
+    border-radius: 1rem;
+    background: url(imgs/potatos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: se;
+}
+
+.rd {
+    border-radius: 1rem;
+    background: url(imgs/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: rd;
+}
+
+.fo {
+    border-radius: 1rem;
+    background: url(imgs/hotdrinks.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: fo;
+}
+
+.fv {
+    border-radius: 1rem;
+    background: url(imgs/pancake.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: fv;
+}
+
+.sx {
+    border-radius: 1rem;
+    background: url(imgs/waffle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: sx;
+}
+
+.sv {
+    border-radius: 1rem;
+    background: url(imgs/stikwaffle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: sv;
+}
+
+.menu__header{
+    display: flex;
+    justify-content: center;
+    color: var(--sky-color);
+    background: rgba(0, 0, 0, .7);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.menu{
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+.sec__overlay:hover{
+    .menu{
+        display: flex;
+    }
+    .menu__header{
+        display:none;
+    }
+}
